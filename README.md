@@ -1,6 +1,7 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
+<div align="center">
+  <img src="/public/img/Converse_logo.png" alt="Fanie's Crochet Logo">
+</div>
 
 # Converse Website using React and Tailwind
 
@@ -9,30 +10,34 @@ This website was created for a study project using react for the first time and 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]()
 
 
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+<div align="center">
+  <img src="/public/img/page-acceuil.png" alt="Fanie's Crochet Logo">
+</div>
 
 
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+<div align="center">
+  <img src="/public/img/page-product.png" alt="Fanie's Crochet Logo">
+</div>
 
 
 ## Screenshots
+<div align="center">
+  <img src="/public/img/page-ds.png" alt="Fanie's Crochet Logo">
+</div>
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Screenshots
+<div align="center">
+  <img src="/public/img/page-catalogue.png" alt="Fanie's Crochet Logo">
+</div>
+## Screenshots
+<div align="center">
+  <img src="/public/img/page-panier.png" alt="Fanie's Crochet Logo">
+</div>
 
 
 
