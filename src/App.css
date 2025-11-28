@@ -181,7 +181,7 @@ button {
   }
 
   .ds-link-fil-ariane {
-    @apply inline-flex items-center fill-gray-500 text-sm font-medium text-gray-700 fill: currentColor;
+    @apply inline-flex items-center fill-gray-500 text-sm font-medium text-gray-700 ;
   }
 
 
