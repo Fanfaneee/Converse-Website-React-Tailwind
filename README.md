@@ -2,7 +2,7 @@
 
 # Converse Website using React and Tailwind
 
-This website was created for a study project using react for the first time and going deeper with tailwind. Learning how to make component, tailwind design system classes and more.
+This website was created for a study project marking my first time using react and going deeper with tailwind. Learning how to make component, tailwind design system classes and more.
 
 
 ## Screenshots
