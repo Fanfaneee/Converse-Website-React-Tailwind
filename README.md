@@ -32,10 +32,20 @@ This website was created for a study project using react for the first time and 
 
 ## Installation
 
-Install my-project with npm
-
+Clone the project 
 ```bash
-  npm install my-project
-  cd my-project
+  git clone https://github.com/Fanfaneee/Converse-Website-React-Tailwind.git
+```
+Enter the project
+```bash
+ cd Converse-Website-React-Tailwind
+```
+Install npm
+```bash
+  npm install 
+```
+Run the project 
+```bash
+  npm run dev 
 ```
     
