@@ -1,7 +1,4 @@
 
-<div align="center">
-  <img src="/public/img/Converse_logo.png" alt="Fanie's Crochet Logo">
-</div>
 
 # Converse Website using React and Tailwind
 
