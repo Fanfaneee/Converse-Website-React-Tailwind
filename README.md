@@ -7,35 +7,27 @@ This website was created for a study project using react for the first time and 
 
 ## Screenshots
 
-![App Screenshot]()
 
-
-## Screenshots
 <div align="center">
   <img src="/public/img/page-acceuil.png" alt="Fanie's Crochet Logo">
 </div>
 
 
-## Screenshots
 <div align="center">
   <img src="/public/img/page-product.png" alt="Fanie's Crochet Logo">
 </div>
 
 
-## Screenshots
 <div align="center">
   <img src="/public/img/page-ds.png" alt="Fanie's Crochet Logo">
 </div>
 
-## Screenshots
 <div align="center">
   <img src="/public/img/page-catalogue.png" alt="Fanie's Crochet Logo">
 </div>
-## Screenshots
 <div align="center">
   <img src="/public/img/page-panier.png" alt="Fanie's Crochet Logo">
 </div>
-
 
 
 ## Installation
