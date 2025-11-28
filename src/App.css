@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+/* === Déclare les tokens consommés par Tailwind (@theme) === */
+@theme {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-background2: var(--color-bg-2);
+  --color-pinker: var(--pinker);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+/* === Injecte Tailwind === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+1. TOKENS GLOBAUX (Design Tokens)
+========================================================= */
+:root {
+  /* 🎨 Palette */
+  --color-primary: black;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #E69D7C;
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #6B7280;
+
+  --color-success: #22C55E;
+  --color-warning: #FACC15;
+  --color-danger: #EF4444;
+
+  /* Surface */
+  --color-bg: #FAFAFA;
+  --color-bg-2: #FBF3F0;
+  --pinker: #FFD0BE;
+
+  --color-bg-subtle: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-ring: #6366F1;
+
+
+
+  /* Typo */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Rayons */
+  --radius-sm: 0.375rem;
+  --radius: 0.75rem;
+  --radius-lg: 1.5rem;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+
+  /* Gaps */
+  --ds-gap-sm: 0.5rem;
+  --ds-gap: 1rem;
+  --ds-gap-lg: 1.5rem;
+}
+
+/* =========================================================
+2. BASE
+========================================================= */
+@layer base {
+  :root {
+    --background: var(--color-bg);
+
+    --foreground: #111827;
+
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+
+    --border: var(--color-border);
+    --ring: var(--color-ring);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: var(--font-sans);
+}
+
+* {
+  @apply border-border;
+}
+
+
+h2,
+h3,
+h4 {
+  @apply font-semibold text-slate-900;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  @apply text-xl font-bold text-slate-900;
+}
+
+a {
+  @apply text-primary underline-offset-4;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* =========================================================
+3. COMPOSANTS DESIGN SYSTEM
+========================================================= */
+@layer components {
+  .ds-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-[0.995] bg-primary text-primary-foreground;
+    padding: 0.55rem 1.1rem;
+  }
+
+  .ds-btn:hover {
+    @apply bg-primary/90;
+  }
+
+  .ds-btn:disabled {
+    @apply opacity-50 pointer-events-none;
+  }
+
+
+  .ds-btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-muted text-muted-foreground;
+    padding: 0.55rem 1.1rem;
+  }
+
+  .ds-card {
+    @apply bg-white border border-border rounded-xl;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .ds-card-header {
+    @apply px-5 pt-5 pb-3 flex items-center justify-between gap-2;
+  }
+
+  .ds-card-body {
+    @apply px-5 pb-5;
+  }
+
+  .ds-input {
+    @apply block w-full rounded-md border bg-white px-3 py-2 text-sm text-slate-900 shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:border-transparent;
+  }
+
+  .ds-label {
+    @apply text-sm font-medium text-slate-900 mb-1;
+  }
+
+  .ds-badge {
+    @apply inline-flex items-center rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground;
+  }
+
+  .ds-link-fil-ariane {
+    @apply inline-flex items-center fill-gray-500 text-sm font-medium text-gray-700 fill: currentColor;
+  }
+
+
+  .ds-link-fil-ariane-2 {
+    @apply ms-1 text-sm fill-gray-500 font-medium text-gray-700 md:ms-2
+    
+
+  }
+
+
+  .ds-button-panier {
+    @apply bg-neutral-900 !text-white hover:bg-neutral-800 hover:bg-secondary hover:text-gray-700;
+
+  }
+
+  .ds-button-panier-2 {
+    @apply bg-neutral-200 text-neutral-900 hover:bg-neutral-300;
+
+  }
+
+  .ds-button-panier-danger {
+    @apply bg-red-600 text-white hover:bg-red-500;
+
+  }
+
+
+
+  .bg-2 {
+    background-color: var(--color-bg-2);
+  }
+
+  .bg-3 {
+    background-color: var(--color-bg-3);
+  }
+
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+}
+
+/* =========================================================
+4. UTILITAIRES DS
+========================================================= */
+@layer utilities {
+  .shadow-ds {
+    box-shadow: var(--shadow);
+  }
+
+  .rounded-ds {
+    border-radius: var(--radius);
+  }
+
+  .rounded-ds-lg {
+    border-radius: var(--radius-lg);
+  }
+
+  .bg-surface {
+    background-color: var(--background);
+  }
+}
